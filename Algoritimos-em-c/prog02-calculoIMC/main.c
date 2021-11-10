@@ -1,9 +1,10 @@
-/*
- * NOME: CRYSTOPPHER SIMÕES TRINDADE
- * DATA: 24/10/2021
- * PROGRAMA: CALCULADORA IMC - V1.0 
+/********************************************
+ * 
+ * NOME:      CRYSTOPPHER SIMÕES TRINDADE
+ * DATA:      24/10/2021
+ * PROGRAMA:  REGISTRO DE ALUNOS - V1.0 
  *
- */
+ ********************************************/
 
 #include <stdio.h>
 #include <stdlib.h>

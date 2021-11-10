@@ -1,43 +1,69 @@
-/*
- * NOME: CRYSTOPPHER SIMÕES TRINDADE
- * DATA: 23/10/2021
- * PROGRAMA: REGISTRO DE ALUNOS - V1.0 
+/********************************************
+ * 
+ * NOME:      CRYSTOPPHER SIMÕES TRINDADE
+ * DATA:      23/10/2021
+ * PROGRAMA:  REGISTRO DE ALUNOS - V1.0 
  *
- */
+ ********************************************/
 
 
 #include <stdio.h>
 #include <stdlib.h>
 
+void menu(void);
 
-        struct registro
-        {
-                char nome[31]; //armazena o nome dos alunos registrado no sistema
-                char endereco[41]; //armazena o endereco dos alunos registrado no sistema
-        };
+ struct registro
+ {
+         char nome[31];     //armazena o nome dos alunos registrado no sistema
+         char endereco[41]; //armazena o endereco dos alunos registrado no sistema
+ };
 
-      struct registro  aluno;
-
+        struct registro  aluno; //cria variável aluno do tipo struct
 
 int main()
 {
+        int op; 
 
-          
-         //putchar('\n');	
-	 printf("---------- REGISTRO DE ALUNOS -----------\n\n");
-	 printf("\nNOME DO ALUNO: \n");
-         fgets(aluno.nome,30,stdin);
+ 	while(1)
+	{
+		printf("\nDeseja cadastrar aluno?\n");
+		printf("1 - SIM\n2 - NAO\n");
+		fflush(stdin);
+		scanf("%d",&op);
 
-	 printf("\nENDERECO  DO ALUNO: \n");
-	 fgets(aluno.endereco,40,stdin);
-	
+		if(op == 1)
+		{
+			break; //saída do laço infinito while
+		}
+		else {
+			printf("PROGRAMA FINALIZADO!\n");
+			exit(1);
+		}
+	}	 
 
-         putchar('\n');		
-	 printf("---------- REGISTRO FINALIZADO  -----------\n\n");
-	 printf("NOME         : %s",aluno.nome);
-	 printf("ENDERECO     : %s",aluno.endereco);
-
-
+	menu();//chamada da função menu 
 
 	return 0;
+}
+
+void menu(void)
+{
+         printf("\nBUG! :( \n");
+         
+
+	 printf("\n\n---------- REGISTRO DE ALUNOS -----------\n\n");
+         printf("\nNOME DO ALUNO: \n");
+	// fflush(stdin);
+         fgets(aluno.nome,30,stdin);
+
+         printf("\nENDERECO  DO ALUNO: \n");
+	 fflush(stdin);
+         fgets(aluno.endereco,40,stdin);
+	
+         putchar('\n');
+         printf("---------- REGISTRO FINALIZADO  -----------\n\n");
+         printf("NOME         : %s",aluno.nome);
+         printf("ENDERECO     : %s",aluno.endereco);
+
+	 return;
 }
