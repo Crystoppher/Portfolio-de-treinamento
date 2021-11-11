@@ -53,7 +53,7 @@ void menu(void)
 
 	 printf("\n\n---------- REGISTRO DE ALUNOS -----------\n\n");
          printf("\nNOME DO ALUNO: \n");
-	// fflush(stdin);
+	 fflush(stdin);
          fgets(aluno.nome,30,stdin);
 
          printf("\nENDERECO  DO ALUNO: \n");
@@ -64,6 +64,6 @@ void menu(void)
          printf("---------- REGISTRO FINALIZADO  -----------\n\n");
          printf("NOME         : %s",aluno.nome);
          printf("ENDERECO     : %s",aluno.endereco);
-
+         putchar('\n');
 	 return;
 }
