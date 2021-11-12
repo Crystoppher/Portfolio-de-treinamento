@@ -2,7 +2,7 @@
 
 #define PI 3.14
 
-void menu(void);
+void imprime_tela_cabecalho();
 float resultado(float value1, float value2);
 
 int main(){
@@ -10,7 +10,8 @@ int main(){
 	float raio,
 	      altura;
 
-        menu();//chamada para função de apresentação do programa
+        imprime_tela_cabecalho();//chamada para função de apresentação do programa
+	printf("=============================================\n\n");
 	printf("INFORME RAIO DO CILINDRO: ");
 	scanf("%f",&raio);
 	printf("INFORME ALTURA DO CILINDRO: ");
@@ -18,10 +19,10 @@ int main(){
 	printf("\nV = %.2f cm3\n\n",resultado(raio,altura));//chamada para função de calculo do cilindro
 
 	return 0;
-}
+}/* Fim do corpo principal da aplicação */
 
-
-void menu(void)
+/* Cabeçalho do programa */
+void imprime_tela_cabecalho()
 {
        printf("\t __________________________ \n");
        printf("\t(__________________________)\n");
@@ -40,7 +41,7 @@ void menu(void)
        printf("\t|                          |\n");
        printf("\t|__________________________|\n");
        putchar('\n');
-       printf("\t    Volume do Cilindro\n");
+       printf("\t    VOLUME DO CILINDRO\n");
        printf("\nO volume do cilindro é calculado em cm3 ou m3.\n");
        return;
 }
