@@ -22,14 +22,16 @@ void menu(void);
 
 int main()
 {
-        int op; 
+        int op = 0; 
 
  	while(1)
 	{
 		printf("\nDeseja cadastrar aluno?\n");
-		printf("1 - SIM\n2 - NAO\n");
-		fflush(stdin);
-		scanf("%d",&op);
+		printf("1 - SIM\n2 - NAO");
+        printf("\n=======================\n");
+        fflush(stdin);
+		scanf("%d",&op);  
+        //fflush(stdin);
 
 		if(op == 1)
 		{
@@ -51,14 +53,16 @@ void menu(void)
          printf("\nBUG! :( \n");
          
 
-	 printf("\n\n---------- REGISTRO DE ALUNOS -----------\n\n");
+	     printf("\n\n---------- REGISTRO DE ALUNOS -----------\n\n");
          printf("\nNOME DO ALUNO: \n");
-	 fflush(stdin);
-         fgets(aluno.nome,30,stdin);
+         fflush(stdin);
+         fgets(aluno.nome, 40, stdin);
+		 //scanf("%s",&aluno.nome);  
+         
 
          printf("\nENDERECO  DO ALUNO: \n");
-	 fflush(stdin);
-         fgets(aluno.endereco,40,stdin);
+ 		 scanf("%c",&aluno.endereco);  
+         //fflush(stdin);
 	
          putchar('\n');
          printf("---------- REGISTRO FINALIZADO  -----------\n\n");
