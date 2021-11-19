@@ -12,12 +12,30 @@
  *
  ******************************************************************************/
 
-
+//Bibliotecas 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
+//Diretivas e Constantes 
+#define TAM 100
+
 //Protótipo de funções
+void menu();
+void inicializar();
+void create();
+void read();
+void update();
+void delete();
+
+struct banco_lista
+{
+	char nome[TAM];
+	char endereco[TAM];
+	int  ID[];
+
+}; 
+struct banco_lista REGISTRO;
 
 //Função Principal
 int main()
@@ -25,4 +43,32 @@ int main()
 
 
     return 0;
+}//end main();
+
+
+//Desenvolvimento das funções 
+void menu()
+{
+
 }
+void inicializar()
+{
+
+}
+void create()
+{
+
+}
+void read()
+{
+
+}
+void update()
+{
+
+}
+void delete()
+{
+
+}
+
