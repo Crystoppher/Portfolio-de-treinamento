@@ -40,7 +40,7 @@ struct banco_lista REGISTRO;
 //Função Principal
 int main()
 {
-
+    menu();
 
     return 0;
 }//end main();
@@ -49,7 +49,20 @@ int main()
 //Desenvolvimento das funções 
 void menu()
 {
+  putchar('\n');
+  printf(" *********************************************\n");
+  printf(" *                                           *\n");
+  printf(" *   $$$  $$$   $$$$$   $$    $   $     $    *\n");
+  printf(" *   $  $$  $   $       $ $   $   $     $    *\n");
+  printf(" *   $      $   $$$$    $  $  $   $     $    *\n");
+  printf(" *   $      $   $       $   $ $   $     $    *\n");
+  printf(" *   $      $   $$$$$   $    $$    $$$$$     *\n");
+  printf(" *                                           *\n");
+  printf(" *********************************************\n");
+  putchar('\n');
 
+  // sleep (50); // Usar no Linux
+  // sistema ("limpar");
 }
 void inicializar()
 {
